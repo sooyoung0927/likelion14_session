@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #104d27;
+  padding: 30px;
+  text-align: center;
+}
+
+fieldset {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 25px;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+div {
+  margin-bottom: 15px;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='date'],
+select {
+  height: 25px;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+input::placeholder {
+  text-align: center;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  background: #e0e7ff;
+  box-shadow: 0 0 0 2px #7c9cff;
+}
+
+input:hover,
+select:hover {
+  background: #e9ecf3;
+}
+
+button:hover {
+  border: none;
+  background-color: #b8d5c3;
+}

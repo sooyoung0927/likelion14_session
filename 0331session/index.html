@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style2.css">
+    <title>html 태그 및 속성</title>
+    <style>
+        div{
+            margin-bottom : 15px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <!-- <legend>타입에 따른 입력창 변화</legend> -->
+        <div class="field-name">
+            <label for="name">이름</label>
+            <input type="text" id="name" placeholder=" 이름을 입력하세요." maxlength="3">
+        </div>
+        <div class="field-password">
+            <label for="password">비밀번호</label>
+            <input type="password" id="password " placeholder=" 비밀번호를 입력하세요." maxlength="8">
+        </div>
+        <div class="field-email">
+            <label for="email">이메일</label>
+            <input type="text" id="email " placeholder=" 이메일을 입력하세요."> 
+        </div>
+        <div class="field-age">
+            <label for="age">나이</label>
+            <input type="text" id="age " placeholder=" 나이을 입력하세요." min="0" max="99">
+        </div>
+        <div class="field-gender">
+            <!-- 라디오 버튼은 name 태그가 같아야 처리됨 -->
+            <label for="아무거나"> 성별</label> <br>
+            <label for="male">남성</label>
+            <input type="radio" id="man" name="gender" >
+            <label for="female">여성</label>
+            <input type="radio" id="woman" name="gender"  >
+        </div>
+        <div class="field-date">
+            <label for="date">생년월일</label>
+            <input type="date" id="date"  >
+        </div>
+        <div class="field-file"> 
+            <label for="file">파일</label>
+            <input type="file" id="password" placeholder="파일 선택">
+        </div>
+        <div class="field-button"> 
+            <label for="button">버튼</label>
+            <br>
+            <button type="button">일반 버튼</button>
+        </div>
+        <!-- <div class="field-submit"> 
+            <label for="submit">서브밋</label>
+            <br>
+            <button type="submit">서브밋 버튼</button>
+        </div> -->
+        <!-- 버튼과 서브밋 모두 클릭하는 버튼처럼 같은 역할을 하는데 둘의 차이는? -->
+        <div class="field-option"> 
+        <label for="national">국적</label>
+        <select name="national">
+            <option value="ko">한국</option>
+            <option value="ch">중국</option>
+            <option value="jp">일본</option>
+            <option value="etc">기타</option>
+        </select>
+        </div>
+        <div class="field-hobby">
+        <label for="hobby">취미 선택 : </label>
+    
+        <label for="movie">영화</label><input type="checkbox" name="hobbies" id="movie" value="movie">
+        <label for="music">음악</label><input type="checkbox" name="hobbies" id="music" value="music">
+        <label for="sleep">취침</label><input type="checkbox" name="hobbies" id="sleep" value="sleep">
+    </fieldset>
+</body>
+</html>
