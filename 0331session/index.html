@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="index.css">
+     <link rel="stylesheet" href="style.css">
     <title>html 태그 및 속성</title>
 </head>
 <body>
     <fieldset>
+        <!-- for, id, type, class, placeholder, min, max 속성 -->
         <!-- <legend>타입에 따른 입력창 변화</legend> -->
         <div class="field-name">
             <label for="name">이름</label>
@@ -15,23 +16,24 @@
         </div>
         <div class="field-password">
             <label for="password">비밀번호</label>
-            <input type="password" id="password " placeholder=" 비밀번호를 입력하세요." maxlength="8">
+            <input type="password" id="password" placeholder=" 비밀번호를 입력하세요." maxlength="8">
         </div>
         <div class="field-email">
             <label for="email">이메일</label>
-            <input type="text" id="email " placeholder=" 이메일을 입력하세요."> 
+            <input type="text" id="email" placeholder=" 이메일을 입력하세요."> 
         </div>
         <div class="field-age">
             <label for="age">나이</label>
-            <input type="text" id="age " placeholder=" 나이을 입력하세요." min="0" max="99">
+            <!-- <input type="text" id="age" placeholder=" 나이을 입력하세요." > -->
+            <input type="number" id="age" placeholder=" 나이을 입력하세요." min="0" max="99">
         </div>
         <div class="field-gender">
             <!-- 라디오 버튼은 name 태그가 같아야 처리됨 -->
-            <label for="아무거나"> 성별</label> <br>
+            <label for="gender"> 성별</label> <br>
             <label for="male">남성</label>
-            <input type="radio" id="man" name="gender" >
+            <input type="radio" id="male" name="gender" >
             <label for="female">여성</label>
-            <input type="radio" id="woman" name="gender"  >
+            <input type="radio" id="female" name="gender"  >
         </div>
         <div class="field-date">
             <label for="date">생년월일</label>
@@ -39,7 +41,7 @@
         </div>
         <div class="field-file"> 
             <label for="file">파일</label>
-            <input type="file" id="password" placeholder="파일 선택">
+            <input type="file" id="file" placeholder="파일 선택">
         </div>
         <div class="field-button"> 
             <label for="button">버튼</label>
