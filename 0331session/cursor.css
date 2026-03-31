@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+#pointer{
+    cursor: pointer;
+}
+
+#text{
+    cursor: text;
+}
+
+#grab{
+    cursor: grab;
+}
+
+#wait{
+    cursor: wait;
+}
+
+#not-allowed{
+    cursor:not-allowed;
+}
