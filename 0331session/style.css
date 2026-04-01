@@ -6,7 +6,6 @@
 body {
   background-color: #104d27;
   padding: 30px;
-  text-align: center;
 }
 
 fieldset {
@@ -14,7 +13,8 @@ fieldset {
   border-radius: 16px;
   padding: 25px;
   max-width: 500px;
-  margin: 0 auto;
+  margin: 0 auto;  
+  text-align: center;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
@@ -22,10 +22,12 @@ div {
   margin-bottom: 15px;
 }
 
-input[type='text'],
-input[type='password'],
-input[type='date'],
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
 select {
+  text-align: center;
   height: 25px;
   border: none;
   border-radius: 10px;

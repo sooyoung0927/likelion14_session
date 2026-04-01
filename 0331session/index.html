@@ -21,11 +21,12 @@
         <div class="field-email">
             <label for="email">이메일</label>
             <input type="text" id="email" placeholder=" 이메일을 입력하세요."> 
+            <!-- <input type="email" id="email" placeholder=" 이메일을 입력하세요.">  -->
         </div>
         <div class="field-age">
             <label for="age">나이</label>
             <input type="text" id="age" placeholder=" 나이를 입력하세요." >
-            <!-- <input type="number" id="age" placeholder=" 나이을 입력하세요." min="0" max="99"> -->
+            <!-- <input type="number" id="age" placeholder=" 나이를 입력하세요." min="0" max="99"> -->
         </div>
         <div class="field-gender">
             <!-- 라디오 버튼은 name 태그가 같아야 처리됨 -->
@@ -56,16 +57,15 @@
         <!-- 버튼과 서브밋 모두 클릭하는 버튼처럼 같은 역할을 하는데 둘의 차이는? -->
         <div class="field-option"> 
         <label for="national">국적</label>
-        <select name="national">
-            <option value="ko">한국</option>
-            <option value="ch">중국</option>
-            <option value="jp">일본</option>
-            <option value="etc">기타</option>
+        <select name="national" id="national">
+            <option>한국</option>
+            <option>중국</option>
+            <option>일본</option>
+            <option>기타</option>
         </select>
         </div>
         <div class="field-hobby">
         <label for="hobby">취미 선택 : </label>
-    
         <label for="movie">영화</label><input type="checkbox" name="hobbies" id="movie" value="movie">
         <label for="music">음악</label><input type="checkbox" name="hobbies" id="music" value="music">
         <label for="sleep">취침</label><input type="checkbox" name="hobbies" id="sleep" value="sleep">
