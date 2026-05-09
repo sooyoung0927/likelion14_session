@@ -83,7 +83,7 @@ function showTodoPage(id, userData) {
       (list) => userData === list.id,
     );
 
-    // 입력창 초기화
+    // 중복 방지용 초기화
     todoList.innerHTML = '';
 
     filterLists.forEach((filterList) => {
